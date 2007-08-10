@@ -1,0 +1,4 @@
+category: Audio
+requires: cygwin libmodplug0
+sdesc: "MOD music library (development)"
+ldesc: "MOD music library based on ModPlug"
