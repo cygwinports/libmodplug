@@ -3,21 +3,23 @@ libmodplug
 MOD music library based on ModPlug
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libstdc++6-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
   bison-2.3-1
-  cygport-0.3.5-1
-  flex-2.5.33-2
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  pkg-config-0.21-1
+  cygport-0.9.6-1
+  flex-2.5.35-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  libtool-2.2.6a-2
+  make-3.81-2
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -37,43 +39,37 @@ Build instructions:
 
 This will create:
   /usr/src/libmodplug-0.8.4-X-src.tar.bz2
-  /usr/src/libmodplug-0.8.4-X.tar.bz2
+  /usr/src/libmodplug-devel-0.8.4-X.tar.bz2
   /usr/src/libmodplug0-0.8.4-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-(libmodplug)
+(libmodplug0)
+  /usr/bin/cygmodplug-0.dll
+  /usr/share/doc/libmodplug/AUTHORS
+  /usr/share/doc/libmodplug/COPYING
+  /usr/share/doc/libmodplug/ChangeLog
+  /usr/share/doc/libmodplug/NEWS
+  /usr/share/doc/libmodplug/README
+  /usr/share/doc/libmodplug/TODO
+
+(libmodplug-devel)
   /usr/include/libmodplug/it_defs.h
   /usr/include/libmodplug/modplug.h
   /usr/include/libmodplug/sndfile.h
   /usr/include/libmodplug/stdafx.h
-  /usr/lib/libmodplug.a
   /usr/lib/libmodplug.dll.a
   /usr/lib/libmodplug.la
   /usr/lib/pkgconfig/libmodplug.pc
-  /usr/share/doc/Cygwin/libmodplug-0.8.4.README
-  /usr/share/doc/libmodplug-0.8.4/AUTHORS
-  /usr/share/doc/libmodplug-0.8.4/COPYING
-  /usr/share/doc/libmodplug-0.8.4/ChangeLog
-  /usr/share/doc/libmodplug-0.8.4/INSTALL
-  /usr/share/doc/libmodplug-0.8.4/NEWS
-  /usr/share/doc/libmodplug-0.8.4/README
-  /usr/share/doc/libmodplug-0.8.4/TODO
-
-(libmodplug0)
-  /usr/bin/cygmodplug-0.dll
 
 ------------------
 
 Port Notes:
 
------ version 0.8.4-2 -----
-Removed -lstdc++ from libmodplug.pc, which broke libtool linking.
-
------ version 0.8.4-1 -----
-Initial release for Cygwin.
+----- version 0.8.4-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
