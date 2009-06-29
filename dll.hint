@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libgcc1 libstdc++6
+requires: libgcc1 libstdc++6
 external-source: libmodplug
 sdesc: "MOD music library (runtime)"
 ldesc: "MOD music library based on ModPlug"
