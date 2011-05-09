@@ -1,0 +1,7 @@
+DESCRIPTION="MOD music library based on ModPlug"
+HOMEPAGE="http://modplug-xmms.sourceforge.net/"
+SRC_URI="mirror://sourceforge/modplug-xmms/${P}.tar.gz"
+
+PKG_NAMES="${PN}1 ${PN}-devel"
+libmodplug1_CONTENTS="usr/bin/cygmodplug-1.dll"
+libmodplug_devel_CONTENTS='usr/include/ usr/lib/ usr/share/'
