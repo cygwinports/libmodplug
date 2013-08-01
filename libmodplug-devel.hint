@@ -1,5 +1,0 @@
-category: Audio
-requires: libmodplug1 libstdc++6-devel
-external-source: libmodplug
-sdesc: "MOD music library (development)"
-ldesc: "MOD music library based on ModPlug"
