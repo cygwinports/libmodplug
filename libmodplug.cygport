@@ -1,12 +1,13 @@
 NAME="libmodplug"
-VERSION=0.8.8.4
+VERSION=0.8.8.5
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MOD music library"
 DESCRIPTION="MOD music library based on ModPlug"
 HOMEPAGE="http://modplug-xmms.sourceforge.net/"
 SRC_URI="mirror://sourceforge/modplug-xmms/libmodplug-${VERSION}.tar.gz"
+PATCH_URI="0.8.8.5-dllexport.patch"
 
 PKG_NAMES="${NAME}1 ${NAME}-devel"
-libmodplug1_CONTENTS="usr/bin/cygmodplug-1.dll"
-libmodplug_devel_CONTENTS='usr/include/ usr/lib/ usr/share/'
+libmodplug1_CONTENTS="usr/bin/cygmodplug-1.dll usr/share/doc/"
+libmodplug_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
